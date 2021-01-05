@@ -3,3 +3,21 @@ body {
   width: 100%;
   max-width: 1440px;
 }
+/*.container_heb {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 626px;
+}*/
+
+#filtre {
+  display: flex;
+}
+#circle {
+  border: 2px solid #f2f2f2;
+  padding: 0.2em 0.6em 0.2em 0.6em;
+  border-radius: 20px;
+}
+#i {
+  font-size: x-small;
+}
