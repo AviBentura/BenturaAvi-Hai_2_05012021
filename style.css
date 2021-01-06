@@ -10,9 +10,14 @@ body {
   grid-template-rows: 626px;
 }*/
 
+/* Partie filtres de recherche */
+
 #filtre {
   display: flex;
 }
+
+/* le I de informations */
+
 #circle {
   border: 2px solid #f2f2f2;
   padding: 0.2em 0.6em 0.2em 0.6em;
@@ -20,4 +25,84 @@ body {
 }
 #i {
   font-size: x-small;
+}
+
+/* stylisation du fond de la partie hebergement */
+
+.art_heberg {
+  background-color: #f2f2f2;
+  border-radius: 21px 21px 21px 21px;
+}
+
+/* stylisation des cadres de presentations des hotels */
+
+.div_hebergement {
+  border: 5px solid #ffffff;
+  border-radius: 21px 21px 21px 21px;
+  width: 246px;
+  height: 200px;
+  background-color: #ffffff;
+  margin-inline-start: 41px;
+}
+.div_hebergement img {
+  width: 100%;
+  height: 114px;
+  border-radius: 15px 15px 0 0;
+}
+
+/* stylisation des descriptions de presentations des hotels */
+
+figcaption {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 11px 0 0 16px;
+}
+figure p {
+  margin: 7px 0 0 16px;
+}
+/* stylisation desprix */
+
+figure p strong {
+  font-size: 15px;
+}
+figure p sub {
+  font-size: 18px;
+}
+.euro {
+  font-size: 17px;
+}
+.chiffres {
+  font-size: 15px;
+}
+/* stylisation étoile */
+
+.icone {
+  font-size: 0.9em;
+  margin: 3px 0 12px 16px;
+  color: #0065fc;
+}
+.i_color {
+  color: #f2f2f2;
+}
+
+/* h3 article art_heberg taille et positionnement de police */
+
+h3 {
+  font-size: 1.2em;
+}
+span h3 {
+  margin: 0;
+  padding: 26px 0 46px 44px;
+}
+
+/* h2 article art_heberg taille et positionnement de police */
+
+h2 {
+  font-size: 1.51em;
+  letter-spacing: -0.6px;
+}
+
+span h2 {
+  margin: 0;
+  padding: 46px 0 7px 40px;
 }
