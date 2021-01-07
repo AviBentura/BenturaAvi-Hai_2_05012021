@@ -2,6 +2,7 @@ body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   width: 100%;
   max-width: 1440px;
+  margin: 0;
 }
 /*.container_heb {
   width: 100%;
@@ -10,6 +11,61 @@ body {
   grid-template-rows: 626px;
 }*/
 
+/* Réglage logo gauche 53 haut 43*/
+
+#logo {
+  width: 96px;
+  height: 45px;
+  padding: 43px 0 0 53px;
+}
+
+/* Réglage liens hebergement activités */
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  padding-right: 33px;
+}
+
+nav a {
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+  padding: 49px 33px 0 33px;
+}
+
+/* Réglage liens s'inscrire */
+
+#inscription {
+  padding: 49px 67px 0 35px;
+}
+#inscription a {
+  color: #0065fc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Réglage h1 */
+
+h1 {
+  margin: 0;
+  padding: 38px 0 0 54px;
+  font-size: 24px;
+}
+
+/* Réglage p */
+
+div p {
+  margin: 0;
+  padding: 10px 0 0 54px;
+}
 /* Partie filtres de recherche */
 
 #filtre {
@@ -43,6 +99,7 @@ body {
   height: 200px;
   background-color: #ffffff;
   margin-inline-start: 41px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .div_hebergement img {
   width: 100%;
