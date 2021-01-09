@@ -33,7 +33,7 @@
       <main role="main">
         <div>
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature</p>
+          <p id="ville">En plein centre ville ou en pleine nature</p>
           <form>
             <label for="search"><i class="fas fa-map-marker-alt"></i></label>
             <input
@@ -46,30 +46,42 @@
           </form>
           <div id="filtre">
             <h3>Filtres</h3>
-            <div class="sp_filtre">
-              <span class="i_filtre">
+            <span id="E" class="i_filtre">
+              <button class="economie E effect">
                 <i class="fas fa-money-bill-wave"></i>
-              </span>
-              <button class="btn">Économique</button>
-            </div>
-            <div class="sp_filtre">
-              <span class="i_filtre">
+              </button>
+              <div class="sp_filtre">
+                <img src="images/logo/Money/money-bill-wave-solid5.png" />
+                <button class="btn E">Économique</button>
+              </div>
+            </span>
+            <span id="F" class="i_filtre">
+              <button class="Familial F effect">
                 <i class="fas fa-child"></i>
-              </span>
-              <button class="btn">Familial</button>
-            </div>
-            <div class="sp_filtre">
-              <span class="i_filtre">
+              </button>
+              <div class="sp_filtre">
+                <i class="fas fa-child"></i>
+                <button class="btn F">Familial</button>
+              </div>
+            </span>
+            <span id="R" class="i_filtre">
+              <button class="Romantique R effect">
                 <i class="fas fa-heart"></i>
-              </span>
-              <button class="btn">Romantique</button>
-            </div>
-            <div class="sp_filtre">
-              <span class="i_filtre">
+              </button>
+              <div class="sp_filtre">
+                <i class="fas fa-heart"></i>
+                <button class="btn R">Romantique</button>
+              </div>
+            </span>
+            <span id="A" class="i_filtre">
+              <button class="Animaux A effect">
                 <i class="fas fa-dog"></i>
-              </span>
-              <button class="btn">Animaux autorisés</button>
-            </div>
+              </button>
+              <div class="sp_filtre">
+                <i class="fas fa-dog"></i>
+                <button class="btn A">Animaux autorisés</button>
+              </div>
+            </span>
           </div>
           <span id="circle"><i id="i" class="fas fa-info"></i></span>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
