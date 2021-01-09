@@ -62,7 +62,7 @@ h1 {
 
 /* Réglage p */
 
-div p {
+#ville {
   margin: 0;
   padding: 10px 0 0 54px;
 }
@@ -70,6 +70,155 @@ div p {
 
 #filtre {
   display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+}
+
+/* Bouton hover filtres */
+
+.economie {
+  transform: translate(18%, 35%);
+  transition: width 2s;
+}
+
+.economie:hover {
+  background-color: #0065fc;
+  text-align: center;
+  width: 191px;
+  transition: 1s ease-in-out;
+}
+
+.Familial {
+  transform: translate(19%, 35%);
+  transition: width 2s;
+}
+
+.Familial:hover {
+  background-color: #0065fc;
+  text-align: center;
+  width: 150px;
+  padding-left: -5px;
+  transition: 1s ease-in-out;
+}
+
+.Romantique {
+  transform: translate(8%, 64%);
+  transition: width 2s;
+}
+
+.Romantique:hover {
+  background-color: #0065fc;
+  text-align: center;
+  width: 195px;
+  transition: 1s ease-in-out;
+}
+.Animaux {
+  transform: translate(7%, 60%);
+  transition: width 2s;
+}
+
+.Animaux:hover {
+  background-color: #0065fc;
+  text-align: center;
+  width: 247px;
+  transition: 1s ease-in-out;
+}
+
+.effect {
+  position: absolute;
+  z-index: 2;
+  height: 50px;
+  color: white;
+  font-size: small;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 25px;
+}
+
+.btn {
+  position: absolute;
+  z-index: -1;
+  background: none;
+  height: 50px;
+  border: 2px solid #cccccc;
+  border-radius: 25px;
+  padding-right: 19px;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+}
+
+/* Réglages block filtres */
+
+.sp_filtre {
+  position: relative;
+  padding: 17px;
+}
+
+.sp_filtre img {
+  width: 16px;
+  height: 16px;
+}
+
+.sp_filtre i {
+  color: #0065fc;
+}
+
+.fa-child {
+  margin-left: 2px;
+}
+
+.fa-dog {
+  margin-top: -2px;
+}
+
+.fa-heart {
+  margin-right: 1px;
+}
+
+.E {
+  width: 193px;
+  text-align: right;
+  margin: -17px 0 0 -33px;
+}
+
+#E {
+  margin: 0 143px 0 32px;
+}
+.F {
+  width: 148px;
+  text-align: right;
+  margin: -17px 0 0 -28px;
+}
+
+#F {
+  margin: 0 101px 0 24px;
+}
+.R {
+  width: 191px;
+  text-align: right;
+  margin: -33px 0 0 -17px;
+}
+
+#R {
+  margin: 0 140px 0 24px;
+}
+
+.A {
+  width: 246px;
+  text-align: right;
+  margin: -30px 0 0 -16px;
+}
+
+#A {
+  margin: 0 197px 0 24px;
+}
+
+.i_filtre {
+  background-color: #deebff;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
 }
 
 /* le I de informations */
@@ -146,6 +295,7 @@ figure p sub {
 
 h3 {
   font-size: 1.2em;
+  margin: 13px 0 0 60px;
 }
 span h3 {
   margin: 0;
