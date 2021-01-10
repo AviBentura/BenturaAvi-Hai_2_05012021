@@ -55,23 +55,64 @@ nav a:hover {
 /* Réglage h1 */
 
 h1 {
+  display: flex;
   margin: 0;
   padding: 38px 0 0 54px;
   font-size: 24px;
+  letter-spacing: -1px;
 }
 
 /* Réglage p */
 
 #ville {
+  display: flex;
   margin: 0;
   padding: 10px 0 0 54px;
+  font-size: 17px;
+  letter-spacing: -0.2px;
 }
+
+/* Partie Recherche */
+
+form {
+  display: flex;
+  height: 51px;
+  margin: 20px 0 0 54px;
+}
+
+label {
+  padding: 17px 18px 14px 21px;
+  background: #f2f2f2;
+  border-radius: 17px 0 0 17px;
+}
+
+#search {
+  width: 235px;
+  border: 1px solid#f2f2f2;
+  padding-left: 17px;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+}
+::-webkit-input-placeholder {
+  color: black;
+}
+
+input[type="submit"] {
+  background: #0065fc;
+  color: white;
+  width: 134px;
+  border: none;
+  border-radius: 0 17px 17px 0;
+}
+
 /* Partie filtres de recherche */
 
 #filtre {
   display: flex;
   flex-wrap: wrap;
   height: 50px;
+  margin-top: 30px;
 }
 
 /* Bouton hover filtres */
@@ -197,7 +238,7 @@ h1 {
 .R {
   width: 191px;
   text-align: right;
-  margin: -33px 0 0 -17px;
+  margin: -32px 0 0 -17px;
 }
 
 #R {
