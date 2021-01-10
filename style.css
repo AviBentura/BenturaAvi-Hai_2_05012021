@@ -104,6 +104,7 @@ input[type="submit"] {
   width: 134px;
   border: none;
   border-radius: 0 17px 17px 0;
+  font-size: 18px;
 }
 
 /* Partie filtres de recherche */
@@ -262,17 +263,38 @@ input[type="submit"] {
   border-radius: 25px;
 }
 
-/* le I de informations */
+/* le I et informations */
+
+#information {
+  display: flex;
+  height: 25px;
+  margin: 34px 0 37px 60px;
+}
+
+#information p {
+  margin: 0;
+  padding: 4px 0 4px 12px;
+}
 
 #circle {
+  position: relative;
+  height: 22px;
+  width: 22px;
   border: 2px solid #f2f2f2;
-  padding: 0.2em 0.6em 0.2em 0.6em;
   border-radius: 20px;
 }
 #i {
-  font-size: x-small;
+  position: absolute;
+  font-size: 12px;
+  color: #0065fc;
+  z-index: -1;
+  padding: 5px 0 0 9px;
 }
 
+sub {
+  vertical-align: -3px;
+  font-size: 15px;
+}
 /* stylisation du fond de la partie hebergement */
 
 .art_heberg {
