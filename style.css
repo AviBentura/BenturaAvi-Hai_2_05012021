@@ -311,6 +311,13 @@ sub {
   vertical-align: -3px;
   font-size: 15px;
 }
+
+/* Disposition Grid de la Section Hebergement */
+
+#hebergement {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
 /* stylisation du fond de la partie hebergement */
 
 .art_heberg {
@@ -331,7 +338,7 @@ sub {
 .div_hebergement {
   border: 5px solid #ffffff;
   border-radius: 21px 21px 21px 21px;
-  width: 246px;
+  width: 236px;
   height: 200px;
   background-color: #ffffff;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
@@ -394,7 +401,7 @@ span h3 {
 /* h2 article art_heberg taille et positionnement  police */
 
 h2 {
-  font-size: 1.51em;
+  font-size: 23px;
   letter-spacing: -0.6px;
 }
 
@@ -405,15 +412,23 @@ span h2 {
 
 .align {
   display: flex;
+  margin-bottom: 13px;
 }
 
-/* stylisation 
+/* Disposition flexible cadres poulaires */
+
+.conteneur_pop {
+  display: flex;
+  flex-direction: column;
+}
+
 /* stylisation du fond de la partie populaire */
 
 #populaire {
   background-color: #f2f2f2;
   border-radius: 21px 21px 21px 21px;
-  margin-left: 50px;
+  margin: 0 50px 0 40px;
+  padding-bottom: 18px;
 }
 
 /* stylisation des cadres de presentations hotels populaires */
@@ -427,10 +442,10 @@ span h2 {
   grid-template-columns: 127px;
   grid-template-rows: 50px 25px;
   border-radius: 21px 21px 21px 21px;
-  width: 344px;
+  width: 334px;
   height: 134px;
   background-color: #ffffff;
-  margin: 33px 40px 33px 37px;
+  margin: 17px 39px 16px 37px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 .div_populaire img {
