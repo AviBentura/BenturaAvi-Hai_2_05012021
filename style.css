@@ -10,6 +10,12 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 626px;
 }*/
+/* header */
+
+.container_head {
+  display: grid;
+  grid-template-columns: 8fr 3fr 1fr;
+}
 
 /* Réglage logo gauche 53 haut 43*/
 
@@ -21,18 +27,26 @@ body {
 
 /* Réglage liens hebergement activités */
 
+nav {
+  margin-top: 36px;
+}
+
 nav ul {
   display: flex;
   list-style-type: none;
 }
 
 nav li {
-  padding-right: 33px;
+  padding-right: 18px;
+}
+#heb {
+  padding: 0;
 }
 
 nav a {
   color: rgb(66, 66, 66);
   text-decoration: none;
+  padding: 49px 33px 0 33px;
 }
 
 nav a:hover {
@@ -44,7 +58,7 @@ nav a:hover {
 /* Réglage liens s'inscrire */
 
 #inscription {
-  padding: 49px 67px 0 35px;
+  padding: 52px 77px 0 0px;
 }
 #inscription a {
   color: #0065fc;
@@ -346,13 +360,15 @@ figure p sub {
 /* stylisation étoile */
 
 .icone {
-  font-size: 0.9em;
+  font-size: 13px;
+  letter-spacing: -1.6px;
   margin: 3px 0 12px 16px;
   color: #0065fc;
 }
 .i_color {
   color: #f2f2f2;
 }
+
 
 /* h3 article art_heberg taille et positionnement de police */
 
@@ -365,7 +381,7 @@ span h3 {
   padding: 26px 0 46px 44px;
 }
 
-/* h2 article art_heberg taille et positionnement de police */
+/* h2 article art_heberg taille et positionnement  police */
 
 h2 {
   font-size: 1.51em;
@@ -375,4 +391,82 @@ h2 {
 span h2 {
   margin: 0;
   padding: 46px 0 7px 40px;
+}
+
+.align {
+  display: flex;
+}
+/* stylisation du fond de la partie populaire */
+
+#populaire {
+  background-color: #f2f2f2;
+  border-radius: 21px 21px 21px 21px;
+}
+
+/* stylisation des cadres de presentations hotels populaires */
+
+.div_populaire {
+  display: grid;
+  grid-template-areas: 'photo desc'
+                       'photo nuit'
+                       'photo star';
+  border: 5px solid #ffffff;
+  grid-template-columns: 127px;
+  grid-template-rows: 50px 25px;
+  border-radius: 21px 21px 21px 21px;
+  width: 344px;
+  height: 134px;
+  background-color: #ffffff;
+  margin: 33px 40px 33px 37px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+.div_populaire img {
+  width: 127px;
+  height: 134px;
+  border-radius: 16px 0 0 16px;
+}
+
+.image_pop {
+  grid-area: photo;
+}
+
+.desc {
+  grid-area: desc;
+  padding: 0;
+  margin: 15px 50px 0 21px;
+}
+
+.Nuit {
+  grid-area: nuit;
+  margin: 0%;
+  padding: 12px 50px 0 21px;
+  font-size: 15px;
+}
+
+.Nuit span {
+  font-size: 13px;
+}
+
+.stars {
+  grid-area: star;
+  align-items: flex-start;
+  padding: 37px 0 0 21px;
+  font-size: 13px;
+  letter-spacing: -1.5px;
+  color: #0065fc;
+}
+
+.sept {
+  font-size: 15px;
+}
+
+.un {
+  padding-top: 6px;
+}
+
+/* Partie icone chart-line */
+
+.fa-chart-line {
+  font-size: 26px;
+  padding: 46px 40px 0 108px;
 }
