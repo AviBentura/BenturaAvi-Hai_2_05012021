@@ -10,6 +10,7 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 626px;
 }*/
+
 /* header */
 
 .container_head {
@@ -314,6 +315,7 @@ sub {
 .art_heberg {
   background-color: #f2f2f2;
   border-radius: 21px 21px 21px 21px;
+  margin-left: 50px;
 }
 
 /* stylisation des cadres de presentations des hotels */
@@ -401,6 +403,7 @@ span h2 {
 #populaire {
   background-color: #f2f2f2;
   border-radius: 21px 21px 21px 21px;
+  margin-left: 50px;
 }
 
 /* stylisation des cadres de presentations hotels populaires */
@@ -474,6 +477,7 @@ span h2 {
 /* stylisation des cadres activités */
 
 #activite {
+  margin-left: 50px;
 }
 
 #activite h2 {
@@ -485,7 +489,6 @@ span h2 {
   width: 302px;
   background-color: #ffffff;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 0px 20px 1px rgba(0, 0, 0, 0.1);
-  margin: 10px;
 }
 
 .ban_image figure {
@@ -552,4 +555,38 @@ span h2 {
   height: 209px;
 }
 
- 
+/* footer */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 55px 50px;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+}
+
+.pied_page {
+  text-align: left;
+}
+
+.pied_page ul {
+  width: 225px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pied_page li {
+  padding-top: 15px;
+}
+
+.pied_page a {
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  font-size: 17px;
+  letter-spacing: -0.2px;
+  margin: 50px 0 12px 0;
+}
