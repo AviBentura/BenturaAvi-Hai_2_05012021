@@ -4,6 +4,7 @@ body {
   max-width: 1440px;
   margin: 0;
 }
+
 /*.container_heb {
   width: 100%;
   display: grid;
@@ -318,6 +319,13 @@ sub {
   margin-left: 50px;
 }
 
+/* Disposition flexible des cadres de presentations des hotels */
+
+.conteneur_flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 25px 0 25px;
+}
 /* stylisation des cadres de presentations des hotels */
 
 .div_hebergement {
@@ -326,8 +334,8 @@ sub {
   width: 246px;
   height: 200px;
   background-color: #ffffff;
-  margin-inline-start: 41px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px 15px 10px 15px;
 }
 .div_hebergement img {
   width: 100%;
@@ -392,12 +400,14 @@ h2 {
 
 span h2 {
   margin: 0;
-  padding: 46px 0 7px 40px;
+  padding: 46px 0 0px 40px;
 }
 
 .align {
   display: flex;
 }
+
+/* stylisation 
 /* stylisation du fond de la partie populaire */
 
 #populaire {
