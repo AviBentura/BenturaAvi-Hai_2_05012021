@@ -348,6 +348,7 @@ sub {
   width: 100%;
   height: 114px;
   border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 
 /* stylisation des descriptions de presentations des hotels */
@@ -452,6 +453,7 @@ span h2 {
   width: 127px;
   height: 134px;
   border-radius: 16px 0 0 16px;
+  object-fit: cover;
 }
 
 .image_pop {
@@ -500,13 +502,20 @@ span h2 {
 }
 
 /* stylisation des cadres activités */
+      /* Display Grid Activités */
 
 #activite {
-  margin-left: 50px;
+  margin: 0 50px 60px 50px;
+  display: grid;
+  grid-gap: 43px;
 }
 
 #activite h2 {
   margin: 0;
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  margin-bottom: -17px;
+  margin-top: 63px;
 }
 
 .ban_image {
@@ -530,7 +539,19 @@ span h2 {
 
 .port_parc {
   height: 445px;
- }
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  height: 445px;
+}
+
+.item4 {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+  height: 445px;
+}
 
 /* Pomegues */
 
@@ -542,7 +563,12 @@ span h2 {
 
 #pomegues {
   height: 236px;
- }
+}
+
+.item2 {
+  grid-column: 2;
+  grid-row: 2 / span 1;
+}
 
 /* iles du Frioul */
 
@@ -554,7 +580,13 @@ span h2 {
 
 #frioul {
   height: 166px;
- }
+}
+
+.item3 {
+  grid-column: 2;
+  grid-row: 3 / span 1;
+  height: 166px;
+}
 
 /* Notre Dame de la Garde */
 
@@ -568,6 +600,12 @@ span h2 {
   height: 196px;
 }
 
+.item5 {
+  grid-column: 4;
+  grid-row: 2 / span 1;
+  height: 196px;
+}
+
 /* Parc Longchamps */
 
 #longchamp img {
@@ -578,6 +616,12 @@ span h2 {
 
 #longchamp {
   height: 209px;
+}
+
+.item6 {
+  grid-column: 4;
+  grid-row: 3 / span 1;
+  margin-top: -43px;
 }
 
 /* footer */
