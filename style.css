@@ -127,7 +127,6 @@ input[type="submit"] {
 }
 
 
-
 /*******************************/
 /* Partie filtres de recherche */
 /*******************************/
@@ -1106,6 +1105,7 @@ h4 {
   }
   h3 {
     margin: 35px 100px 15px 23px;
+    width: 100%;
   }
   #filt {
     width: 100%;
@@ -1131,6 +1131,10 @@ h4 {
 
   /* Media Queries article populaire */
 
+  #populaire {
+    border-radius: 0;
+    margin: 0;
+  }
   .align {
     display: grid;
     grid-template-columns: 85% 15%;
@@ -1157,53 +1161,90 @@ h4 {
   .div_populaire img {
     width: 100%;
     height: auto;
+    max-height: 300px;
     border-radius: 16px 16px 0 0;
   }
+  .desc {
+    font-size: large;
+  }
   .stars {
+    font-size: 15px;
     padding: 10px 0 11px 21px;
+  }
+  .Nuit {
+    font-size: 17px;
+  }
+
+  /* Media Queries Article Hébergement */
+
+  .art_heberg {
+    background-color: white;
+    border-radius: 0;
+    margin-left: 0;
+  }
+  #hebergement {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .conteneur_flex {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0;
+    margin: 0 21px 0 21px;
+  }
+  .div_hebergement {
+    width: auto;
+    height: auto;
+  }
+  .div_hebergement img {
+    height: 115px;
+    max-height: 300px;
+  }
+  figcaption {
+    font-size: 15px;
+  }
+  .conteneur_flex p {
+    font-size: 14px;
   }
 
   /* Media Queries Section Activités */
   
   .ban_image {
     height: auto;
+    min-height: 315px;
     width: auto;
   }
-  figcaption {
-    padding-bottom: 23px;
+  .ban_image figcaption {
+    font-size: 17px;
+    padding: 21px 0 0 21px;
   }
   .port_parc {
     height: auto;
   }
   .port_parc img {
     height: auto;
+    max-height: 250px;
   }
   #pomegues {
     height: auto;
   }
   #pomegues img {
-    height: 315px;
-  }
-  .item2 {
-    grid-column: 1;
-    grid-row: 2 / span 1
-  }
-  .item3 {
-    grid-column: 1;
-    grid-row: 3 / span 1;
     height: auto;
+    max-height: 250px;
   }
   #frioul {
     height: auto;
   }
   #frioul img {
     height: auto;
+    max-height: 250px;
   }
   #notre_dame_garde {
     height: auto;
   }
   #notre_dame_garde img {
     height: auto;
+    max-height: 250px;
   }
   .item6 {
     margin-top: 0;
@@ -1213,15 +1254,21 @@ h4 {
   }
   #longchamp img {
     height: auto;
+    max-height: 250px;
   }
-  .grid-container {
+  #activite h2 {
+    margin-top: 0;
+  }
+  #activite {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 40px 60px 40px;
   }
-  #hebergement {
-    display: flex;
-    flex-direction: column-reverse;
+
+  /*FOOTER*/
+
+  footer {
+    padding: 0 0 55px 40px;
   }
 
 }
