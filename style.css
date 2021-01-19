@@ -294,17 +294,19 @@ input[type="submit"] {
 
 #circle {
   position: relative;
-  height: 22px;
-  width: 22px;
-  border: 2px solid #f2f2f2;
-  border-radius: 20px;
+  height: 23px;
+  width: 23px;
+}
+#circ {
+  font-size: 24px;
+  color: #f2f2f2;
 }
 #i {
   position: absolute;
   font-size: 12px;
   color: #0065fc;
   z-index: -1;
-  padding: 5px 0 0 9px;
+  padding: 6px 0 0 10px;
 }
 
 sub {
@@ -663,4 +665,340 @@ h4 {
   font-size: 17px;
   letter-spacing: -0.2px;
   margin: 50px 0 12px 0;
+}
+
+
+
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+
+
+
+
+/*****************************/
+/* Pour mobile jusqu'a 480px */
+/*****************************/
+
+
+
+
+
+@media screen and (max-device-width: 480px) {
+
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  #bod {
+    margin: 0;
+  }
+
+  /* Media Queries Header */
+
+  .container_head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #logo {
+    order: 1;
+    padding: 23px 0 0 18px;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: -6px;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+  nav li {
+    padding-right: 0;
+  }
+  .heb {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33px;
+  }
+  nav a {
+    padding: 0;
+  }
+  nav a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    padding: 0;
+  }
+  div #inscription {
+    order: 2;
+    padding: 40px 20px 15px 0;
+  }
+
+  /* Media Queries Première Div main */
+
+  h1 {
+    padding: 32px 0 0 20px;
+  }
+  #ville {
+    padding: 15px 0 0 20px;
+  }
+  form {
+    margin: 34px 0 0 21px;
+  }
+  input[type="submit"] {
+    display: none;
+  }
+  .bouton {
+    visibility: visible;
+    background: #0065fc;
+    color: white;
+    width: 51px;
+    height: 50px;
+    border: none;
+    border-radius: 17px 17px 17px 17px;
+    font-size: 18px;
+    margin-left: -12px;
+  }
+  #search {
+    width: 68%;
+  }
+  #filtre {
+    margin-top: 0;
+    height: auto;
+  }
+  h3 {
+    margin: 35px 100px 15px 23px;
+    width: 100%;
+  }
+  .i_filtre {
+    height: 51px;
+  }
+  #E {
+    margin: 0 133px 13px 23px;
+  }
+  #F {
+    margin: 0 91px 13px 21px;
+  }
+  #R {
+    margin: 0 130px 13px 21px;
+  }
+  #A {
+    margin: 0 197px 0px 21px;
+  }
+  #information {
+    margin: 12px 0 35px 23px;
+  }
+  #i {
+    font-size: 12px;
+    padding: 8px 0 0 11px;
+  }
+  #circ {
+    font-size: 27px;
+    color: #f2f2f2;
+  }
+  #circle {
+    border: none;
+  }
+
+  /* Media Queries Section hebergements */
+
+  #hebergement {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  /* Media Queries article populaire */
+
+  #populaire {
+    border-radius: 0;
+    margin: 0;
+  }
+  .div_populaire {
+    width: auto;
+    height: auto;
+    margin: 17px 23px 16px 23px;
+  }
+  .desc {
+    margin: 15px 41px 0 20px;
+  }
+  .Nuit {
+    padding: 15px 50px 0 20px;
+    font-size: 13px;
+    letter-spacing: 0.1;
+  }
+  .stars {
+    padding: 37px 0 0 20px;
+  }
+  figcaption {
+    font-size: 15px;
+  }
+  #eau {
+    margin-top: -6px;
+  }
+  #bleu_blanc {
+    margin-top: -6px;
+    margin-bottom: 18px;
+  }
+  article { 
+    width: 100%;
+  }
+  .align {
+    display: grid;
+    grid-template-columns: 90% 10%;
+  }
+  .fa-chart-line {
+    padding: 40px 0 0 0;
+  }
+  h2 {
+    font-size: 22px;
+    letter-spacing: -0.3px;
+  }
+
+  /* Media Queries article hébergement */
+
+  .art_heberg {
+    background-color: white;
+    border-radius: 0;
+    margin-left: 0;
+  }
+  span h2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 0px 21px;
+    font-size: 24px;
+  }
+  .conteneur_flex {
+    margin: 0;
+  }
+  .div_hebergement {
+    margin: 18px 21px -6px 21px;
+    width: auto;
+    height: auto;
+  }
+  .div_hebergement figcaption {
+    font-size: 17px;
+  }
+  figure p sub {
+    font-size: 16px;
+  }
+  sub {
+    vertical-align: -2px;
+  }
+  figure p strong {
+    font-size: 14px;
+  }
+  .chiffres {
+    font-size: 14px;
+  }
+  span h3 {
+    margin: 0;
+    padding: 37px 0 0 21px;
+  }
+
+  /* Media Queries Section Activités */
+
+  #activite {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 21px 49px 21px;
+    grid-gap: 0;
+  }
+  #activite h2 {
+    margin: 60px 0 33px 0;
+  }
+  .ban_image {
+    width: auto;
+  }
+  .ban_image figure {
+    margin: 0;
+    height: 100%;
+  }
+  .port_parc {
+    height: 100%;
+  }
+  .port_parc img {
+    width: 100%;
+    height: auto;
+    max-height: 134px;
+  }
+  .ban_image figcaption {
+    padding: 19px;
+  }
+  .item1 {
+    margin-bottom: 24px;
+    height: auto;
+  }
+  #pomegues {
+    height: auto;
+  }
+  #pomegues img {
+    width: 100%;
+    height: auto;
+    max-height: 134px;
+  }
+  .item2 {
+    margin-bottom: 22px;
+  }
+  #frioul {
+    height: auto;
+  }
+  #frioul img {
+    width: 100%;
+    height: auto;
+    max-height: 134px;
+  }
+  .item3 {
+    height: auto;
+    margin-bottom: 21px;
+  }
+  .item4 {
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .item5 {
+    height: auto;
+    margin-bottom: 24px;
+  }
+  #notre_dame_garde {
+    height: auto;
+  }
+  #notre_dame_garde img {
+    height: auto;
+    max-height: 134px;
+  }
+  .item6 {
+    margin-top: 0;
+  }
+  #longchamp {
+    height: auto;
+  }
+  #longchamp img {
+    height: auto;
+    max-height: 134px;
+  }
+
+  /* Partie Footer */
+
+  footer {
+    margin: 0;
+    padding: 2px 0 49px 29px;
+  }
+  h4 {
+    margin: 47px 0 9px 0;
+  }
+  #Assistance {
+    margin: 58px 0 9px 0;
+  }
+  .pied_page li {
+    padding-top: 18px;
+  }
+
 }
