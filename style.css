@@ -386,9 +386,7 @@ figure p sub {
 .euro {
   font-size: 17px;
 }
-.chiffres {
-  font-size: 15px;
-}
+
 /* stylisation étoile */
 
 .icone {
@@ -489,12 +487,8 @@ span h2 {
 .Nuit {
   grid-area: nuit;
   margin: 0%;
-  padding: 12px 50px 0 21px;
+  padding: 22px 50px 0 21px;
   font-size: 15px;
-}
-
-.Nuit span {
-  font-size: 13px;
 }
 
 .stars {
@@ -504,14 +498,6 @@ span h2 {
   font-size: 13px;
   letter-spacing: -1.5px;
   color: #0065fc;
-}
-
-.sept {
-  font-size: 15px;
-}
-
-.un {
-  padding-top: 6px;
 }
 
 /* Partie icone chart-line */
@@ -697,15 +683,15 @@ h4 {
   margin: 50px 0 12px 0;
 }
 
-
-
-
-/*****************/
-/* MEDIA QUERIES */
-/*****************/
-
-
-
+/********************************************/
+/********************************************/
+/********************************************/
+/*******/                            /*******/
+/*******       MEDIA QUERIES         /*******/
+/*******/                            /*******/
+/********************************************/
+/********************************************/
+/********************************************/
 
 
 /*****************************/
@@ -842,6 +828,9 @@ h4 {
     display: flex;
     flex-direction: column-reverse;
     margin: 0;
+  }
+  .euro {
+    font-size: 15px;
   }
 
   /* Media Queries article populaire */
@@ -1174,6 +1163,9 @@ h4 {
   .Nuit {
     font-size: 17px;
   }
+  .Nuit strong {
+    font-size: 17px;
+  }
 
   /* Media Queries Article Hébergement */
 
@@ -1204,6 +1196,9 @@ h4 {
     font-size: 15px;
   }
   .conteneur_flex p {
+    font-size: 14px;
+  }
+  .euro {
     font-size: 14px;
   }
 
@@ -1356,7 +1351,7 @@ h4 {
     padding: 12px 50px 0 38px
   }
   .Nuit strong {
-    font-size: 24px;
+    font-size: 21px;
   }
   .stars {
     font-size: 20px;
@@ -1390,6 +1385,9 @@ h4 {
   }
   .conteneur_flex p {
     font-size: 14px;
+  }
+  .euro {
+    font-size: 15px;
   }
 
   /* Media Queries Section Activités */
@@ -1534,7 +1532,7 @@ h4 {
     padding: 4px 50px 0 25px;
   }
   .Nuit strong {
-    font-size: 24px;
+    font-size: 20px;
   }
   .stars {
     font-size: 17px;
@@ -1584,6 +1582,9 @@ h4 {
   }
   .conteneur_flex p {
     font-size: 14px;
+  }
+  .euro {
+    font-size: 15px;
   }
 
   /* Media Queries Section Activités */
