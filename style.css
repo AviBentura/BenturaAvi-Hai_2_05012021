@@ -1630,3 +1630,86 @@ h4 {
   }
 
 }
+
+/**************************************/
+
+
+/**************************************/
+/* Pour laptop entre 1024px et 1200px */
+/**************************************/
+
+
+/**************************************/
+
+@media all and (min-width: 1024px) and (max-width: 1200px) {
+
+  /* Media Queries Section Hebérgement */
+
+  #hebergement {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+  }
+
+  /* Media Queries Article Hébergement */
+
+  .conteneur_flex {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+  }
+  .div_hebergement {
+    width: auto;
+    height: 210px;
+    margin: 20px 10px 10px 10px;
+  }
+  .div_hebergement img {
+    height: 108px;
+  }
+  .div_hebergement figcaption {
+    font-size: 16px;
+    padding: 11px 0 0 10px;
+  }
+  .div_hebergement p {
+    margin: 7px 0 0 10px;
+    font-size: 15px;
+  }
+  .div_hebergement .icone {
+    margin: 3px 0 8px 10px;
+  }
+
+  /* Media Queries Article Populaire */
+
+  .div_populaire {
+    grid-template-rows: 66px 25px;
+  }
+  .stars {
+    padding: 22px 0 0 21px;
+  }
+
+  /* Media Queries Section Activités */
+  
+  #activite h2 {
+    grid-column: 1 / span 2;
+  }
+  .ban_image {
+    width: auto;
+  }
+  .item4 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+  .item5 {
+    grid-column: 1;
+    grid-row: 5 / span 1;
+    height: auto;
+  }
+  .item6 {
+    grid-column: 2;
+    grid-row: 5 / span 1;
+    margin-top: 0;
+  }
+  #notre_dame_garde img {
+    height: 155px;
+  }
+
+}
