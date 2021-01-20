@@ -1641,7 +1641,7 @@ h4 {
 
 /**************************************/
 
-@media all and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
 
   /* Media Queries Section Hebérgement */
 
@@ -1694,14 +1694,32 @@ h4 {
   .ban_image {
     width: auto;
   }
+  .item1 {
+    height: 550px;
+  }
+  .port_parc img {
+    height: 494px;
+  }
+  #pomegues img {
+    height: 233px;
+  }
+  .item3 {
+    height: auto;
+  }
+  #frioul img {
+    height: 162px;
+  }
   .item4 {
     grid-column: 1 / span 2;
     grid-row: 4;
   }
+  .item4 img {
+    height: 389px;
+  }
   .item5 {
     grid-column: 1;
     grid-row: 5 / span 1;
-    height: auto;
+    height: 250px;
   }
   .item6 {
     grid-column: 2;
@@ -1709,7 +1727,61 @@ h4 {
     margin-top: 0;
   }
   #notre_dame_garde img {
-    height: 155px;
+    height: 194px;
+  }
+  #longchamp img {
+    height: 194px;
+  }
+
+}
+
+/**************************************/
+
+
+/**************************************/
+/* Pour laptop entre 1200px et 1438px */
+/**************************************/
+
+
+/**************************************/
+
+@media screen and (min-width: 1200px) and (max-width: 1438px) {
+
+  /* Media Queries Section Hebérgement */
+
+  .conteneur_flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .div_hebergement {
+    width: auto;
+    height: auto;
+  }
+
+  /* Media Queries Section Activités */
+  
+  #activite h2 {
+    grid-column: 1 / span 2;
+  }
+  .ban_image {
+    width: auto;
+  }
+  .item5 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    height: 250px;
+  }
+  .item6 {
+    grid-column: 3;
+    grid-row: 4 / span 1;
+    margin-top: 0;
+  }
+  #notre_dame_garde img {
+    height: 194px;
+  }
+  #longchamp img {
+    height: 194px;
   }
 
 }
