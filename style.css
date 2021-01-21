@@ -364,6 +364,10 @@ sub {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
+.conteneur_flex a {
+  text-decoration: none;
+  color: black;
+}
 
 /* stylisation des descriptions de presentations des hotels */
 
@@ -500,6 +504,11 @@ span h2 {
   color: #0065fc;
 }
 
+.conteneur_pop a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Partie icone chart-line */
 
 .fa-chart-line {
@@ -535,6 +544,11 @@ span h2 {
   width: 302px;
   background-color: #ffffff;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 0px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ban_image a {
+  text-decoration: none;
+  color: black;
 }
 
 .ban_image figure {
@@ -1214,7 +1228,7 @@ h4 {
     padding: 21px 0 0 21px;
   }
   .port_parc {
-    height: auto;
+    height: 315px;
   }
   .port_parc img {
     height: auto;
@@ -1227,6 +1241,9 @@ h4 {
     height: auto;
     max-height: 250px;
   }
+  #pomegues figure {
+    height: 315px;
+  }
   #frioul {
     height: auto;
   }
@@ -1234,12 +1251,18 @@ h4 {
     height: auto;
     max-height: 250px;
   }
+  #frioul figure {
+    height: 315px;
+  }
   #notre_dame_garde {
     height: auto;
   }
   #notre_dame_garde img {
     height: auto;
     max-height: 250px;
+  }
+  #notre_dame_garde figure {
+    height: 315px;
   }
   .item6 {
     margin-top: 0;
@@ -1250,6 +1273,9 @@ h4 {
   #longchamp img {
     height: auto;
     max-height: 250px;
+  }
+  #longchamp figure {
+    height: 315px;
   }
   #activite h2 {
     margin-top: 0;
@@ -1450,6 +1476,18 @@ h4 {
   .ban_image {
     width: auto;
   }
+  #pomegues figure {
+    height: 201px;
+  }
+  #frioul figure {
+    height: 201px;
+  }
+  #notre_dame_garde figure {
+    height: 201px;
+  }
+  #longchamp figure {
+    height: 201px;
+  }
 
 }
 
@@ -1605,6 +1643,9 @@ h4 {
   #pomegues img {
     height: 145px;
   }
+  #pomegues figure {
+    height: 201px;
+  }
   .item2 {
     height: 201px;
   }
@@ -1616,6 +1657,9 @@ h4 {
   }
   #frioul img {
     height: 145px;
+  }
+  #frioul figure {
+    height: 201px;
   }
   .item4 {
     grid-column: 1;
@@ -1633,11 +1677,17 @@ h4 {
   #notre_dame_garde img {
     height: 145px;
   }
+  #notre_dame_garde figure {
+    height: 201px;
+  }
   #longchamp {
     height: 201px;
   }
   #longchamp img {
     height: 145px;
+  }
+  #longchamp figure {
+    height: 201px;
   }
   .item6 {
     grid-column: 2;
@@ -1731,11 +1781,17 @@ h4 {
   #pomegues img {
     height: 233px;
   }
+  #pomegues figure {
+    height: 288px;
+  }
   .item3 {
     height: auto;
   }
   #frioul img {
     height: 162px;
+  }
+  #frioul figure {
+    height: 217px;
   }
   .item4 {
     grid-column: 1 / span 2;
@@ -1757,8 +1813,14 @@ h4 {
   #notre_dame_garde img {
     height: 194px;
   }
+  #notre_dame_garde figure {
+    height: 251px;
+  }
   #longchamp img {
     height: 194px;
+  }
+  #longchamp figure {
+    height: 251px;
   }
 
 }
@@ -1814,8 +1876,14 @@ h4 {
     grid-row: 4 / span 1;
     margin-top: 0;
   }
+  #notre_dame_garde {
+    height: 252px;
+  }
   #notre_dame_garde img {
     height: 194px;
+  }
+  #longchamp {
+    height: 252px;
   }
   #longchamp img {
     height: 194px;
