@@ -371,16 +371,31 @@ sub {
   color: black;
 }
 
+h6 {
+  display: none;
+}
+
 /* stylisation des descriptions de presentations des hotels */
 
 figcaption {
   font-weight: bold;
   font-size: 1em;
-  padding: 11px 0 0 16px;
+  padding: 15px 0 0 20px;
 }
+
+figcaption p {
+  font-weight: normal;
+}
+
 figure p {
-  margin: 7px 0 0 16px;
+  margin-top: 7px;
 }
+
+.description {
+  font-size: 17px;
+  padding: 7px 0 0 16px;
+}
+
 /* stylisation desprix */
 
 figure p strong {
@@ -398,7 +413,7 @@ figure p sub {
 .icone {
   font-size: 13px;
   letter-spacing: -1.6px;
-  margin: 3px 0 12px 16px;
+  margin: -10px 0 12px 0;
   color: #0065fc;
 }
 .i_color {
@@ -412,7 +427,7 @@ h3 {
   font-size: 1.2em;
   margin: 13px 0 0 60px;
 }
-span h3 {
+#haut {
   margin: 0;
   padding: 26px 0 46px 44px;
 }
@@ -424,7 +439,7 @@ h2 {
   letter-spacing: -0.6px;
 }
 
-span h2 {
+.art_heberg h2 {
   margin: 0;
   padding: 46px 0 0px 40px;
 }
@@ -432,6 +447,11 @@ span h2 {
 .align {
   display: flex;
   margin-bottom: 13px;
+}
+
+.align h2 {
+  margin: 0;
+  padding: 46px 0 0px 40px;
 }
 
 /* Disposition flexible cadres poulaires */
@@ -487,20 +507,21 @@ span h2 {
 .desc {
   grid-area: desc;
   padding: 0;
+  font-size: 15px;
   margin: 15px 50px 0 21px;
 }
 
 .Nuit {
   grid-area: nuit;
   margin: 0%;
-  padding: 22px 50px 0 21px;
-  font-size: 15px;
+  padding-top: 7px;
+  padding-bottom: 30px;
+  font-size: 14px;
 }
 
 .stars {
   grid-area: star;
   align-items: flex-start;
-  padding: 37px 0 0 21px;
   font-size: 13px;
   letter-spacing: -1.5px;
   color: #0065fc;
@@ -864,13 +885,13 @@ h4 {
     margin: 15px 41px 0 20px;
   }
   .Nuit {
-    padding: 15px 50px 0 20px;
+    /*padding: 15px 50px 0 20px;*/
     font-size: 13px;
     letter-spacing: 0.1;
   }
-  .stars {
+  /*.stars {
     padding: 37px 0 0 20px;
-  }
+  }*/
   figcaption {
     font-size: 15px;
   }
@@ -887,6 +908,10 @@ h4 {
   .align {
     display: grid;
     grid-template-columns: 90% 10%;
+    margin: 0 23px 13px 23px;
+  }
+  .align h2 {
+    padding: 46px 0 0 0;
   }
   .fa-chart-line {
     padding: 40px 0 0 0;
@@ -932,7 +957,7 @@ h4 {
   .chiffres {
     font-size: 14px;
   }
-  span h3 {
+  #haut {
     margin: 0;
     padding: 37px 0 0 21px;
   }
@@ -1162,6 +1187,7 @@ h4 {
     flex-direction: column;
     width: auto;
     height: auto;
+    padding-bottom: 15px;
   }
   .div_populaire img {
     width: 100%;
@@ -1174,10 +1200,11 @@ h4 {
   }
   .stars {
     font-size: 15px;
-    padding: 10px 0 11px 21px;
+    margin-bottom: 15px;
   }
   .Nuit {
     font-size: 17px;
+    padding-bottom: 15px;
   }
   .Nuit strong {
     font-size: 17px;
@@ -1190,6 +1217,9 @@ h4 {
     border-radius: 0;
     margin-left: 0;
   }
+  .art_heberg h2 {
+    padding: 46px 0 0px 23px;
+  }
   #hebergement {
     display: flex;
     flex-direction: column-reverse;
@@ -1198,11 +1228,13 @@ h4 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 0;
-    margin: 0 21px 0 21px;
+    margin: 0 15px 0 15px;
   }
   .div_hebergement {
     width: auto;
     height: auto;
+    padding-bottom: 10px;
+    margin: 20px 5px 10px 5px
   }
   .div_hebergement img {
     height: 115px;
@@ -1216,6 +1248,9 @@ h4 {
   }
   .euro {
     font-size: 14px;
+  }
+  .icone {
+    margin: 0; 
   }
 
   /* Media Queries Section Activités */
@@ -1371,19 +1406,21 @@ h4 {
   figcaption {
     font-size: 1.25em;
   }
+
   .desc {
-    margin: 25px 45px 0 38px;
+    font-size: 17px;
+    margin: 25px 20px 0 20px;
   }
+
   .Nuit {
-    font-size: 20px;
-    padding: 12px 50px 0 38px
+    font-size: 17px;
+    padding: 73px 50px 73px 0px;
   }
   .Nuit strong {
-    font-size: 21px;
+    font-size: 17px;
   }
   .stars {
-    font-size: 20px;
-    padding: 37px 0 0 38px;
+    font-size: 15px;
   }
   
   /* Media Queries Article hebergement */
@@ -1416,6 +1453,13 @@ h4 {
   }
   .euro {
     font-size: 15px;
+  }
+  .icone {
+    margin: -5px 0 10px 0;
+  }
+  #haut {
+    font-size: 1em;
+    margin: 18px 0 44px 39px;
   }
 
   /* Media Queries Section Activités */
@@ -1569,14 +1613,13 @@ h4 {
   }
   .Nuit {
     font-size: 18px;
-    padding: 4px 50px 0 25px;
+    padding: 7px 50px 7px 0;
   }
   .Nuit strong {
     font-size: 20px;
   }
   .stars {
     font-size: 17px;
-    padding: 6px 0 11px 23px;
   }
   .div_populaire {
     grid-template-areas:
@@ -1617,7 +1660,7 @@ h4 {
     height: 115px;
     max-height: 300px;
   }
-  figcaption {
+  .description {
     font-size: 15px;
   }
   .conteneur_flex p {
@@ -1625,6 +1668,17 @@ h4 {
   }
   .euro {
     font-size: 15px;
+  }
+  figure p {
+    margin-top: 4px;
+  }
+  .conteneur_flex .icone {
+    font-size: 13px;
+  }
+  #haut {
+    font-size: 1.22em;
+    margin: 18px 0 44px 39px;
+    padding: 0;
   }
 
   /* Media Queries Section Activités */
@@ -1736,34 +1790,38 @@ h4 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
+    margin: 0 10px 0 10px;
   }
   .div_hebergement {
     width: auto;
     height: 210px;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 5px 5px 5px;
   }
   .div_hebergement img {
     height: 108px;
   }
-  .div_hebergement figcaption {
+  /*.div_hebergement figcaption {
     font-size: 16px;
-    padding: 11px 0 0 10px;
-  }
-  .div_hebergement p {
-    margin: 7px 0 0 10px;
+    padding: 4px 0 0 10px;
+  }*/
+  /*.div_hebergement p {
     font-size: 15px;
+  }*/
+  .description {
+    font-size: 17px;
+    padding: 7px 8px 0 8px;
   }
-  .div_hebergement .icone {
-    margin: 3px 0 8px 10px;
+  .art_heberg h2 {
+    padding: 46px 0 0px 20px;
+  }
+  #haut {
+    padding: 26px 0 46px 20px;
   }
 
   /* Media Queries Article Populaire */
 
   .div_populaire {
     grid-template-rows: 66px 25px;
-  }
-  .stars {
-    padding: 22px 0 0 21px;
   }
 
   /* Media Queries Section Activités */
