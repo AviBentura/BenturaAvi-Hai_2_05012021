@@ -807,6 +807,9 @@ h4 {
   input[type="submit"] {
     display: none;
   }
+  label {
+    height: 20px;
+  }
   .bouton {
     visibility: visible;
     background: #0065fc;
@@ -820,6 +823,7 @@ h4 {
   }
   #search {
     width: 83%;
+    height: 52px;
     margin-left: -37px;
     position: relative;
     z-index: -1;
