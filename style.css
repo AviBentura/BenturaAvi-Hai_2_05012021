@@ -816,10 +816,14 @@ h4 {
     border: none;
     border-radius: 17px 17px 17px 17px;
     font-size: 18px;
-    margin-left: -12px;
+    margin-left: -36px;
   }
   #search {
-    width: 68%;
+    width: 83%;
+    margin-left: -37px;
+    position: relative;
+    z-index: -1;
+    padding-left: 52px;
   }
   #filtre {
     margin-top: 0;
