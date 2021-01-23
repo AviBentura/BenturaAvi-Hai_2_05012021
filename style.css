@@ -882,16 +882,20 @@ h4 {
     margin: 17px 23px 16px 23px;
   }
   .desc {
+    display: grid;
+    grid-template-areas: 'descrip'
+                         'nuit'
+                         'star';
+    grid-template-rows: 34px auto auto;
     margin: 15px 41px 0 20px;
   }
+  .it1 {
+    grid-area: descrip;
+  }
   .Nuit {
-    /*padding: 15px 50px 0 20px;*/
     font-size: 13px;
     letter-spacing: 0.1;
   }
-  /*.stars {
-    padding: 37px 0 0 20px;
-  }*/
   figcaption {
     font-size: 15px;
   }
@@ -914,7 +918,7 @@ h4 {
     padding: 46px 0 0 0;
   }
   .fa-chart-line {
-    padding: 40px 0 0 0;
+    padding: 40px 0 0 18px;
   }
   h2 {
     font-size: 22px;
@@ -927,6 +931,10 @@ h4 {
     background-color: white;
     border-radius: 0;
     margin-left: 0;
+  }
+  .art_heberg h2 {
+    margin: 0;
+    padding: 46px 0 0px 23px;
   }
   span h2 {
     display: flex;
