@@ -131,80 +131,37 @@ input[type="submit"] {
 /* Partie filtres de recherche */
 /*******************************/
 
+/* Div Filtre */
 
-
-#filtre {
+.filtre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   height: 50px;
   margin-top: 30px;
+  margin-left: 52px;
+  position: relative;
 }
 
-/* Bouton hover filtres */
+/* Texte Filtre */
 
-.economie {
-  transform: translate(18%, 0%);
-  transition: width 2s;
+.cache {
+  width: 88px;
+  font-size: 22px;
+  margin: 0;
+  padding-top: 12px;
 }
+/* Filtre économique */
 
-.economie:hover {
-  background-color: #0065fc;
-  text-align: center;
-  width: 191px;
-  transition: 1s ease-in-out;
-}
-
-.Familial {
-  transform: translate(19%, 0%);
-  transition: width 2s;
-}
-
-.Familial:hover {
-  background-color: #0065fc;
-  text-align: center;
-  width: 150px;
-  padding-left: -5px;
-  transition: 1s ease-in-out;
-}
-
-.Romantique {
-  transform: translate(-1%, 68%);
-  transition: width 2s;
-}
-
-.Romantique:hover {
-  background-color: #0065fc;
-  text-align: center;
-  width: 195px;
-  transition: 1s ease-in-out;
-}
-.Animaux {
-  transform: translate(0%, 69%);
-  transition: width 2s;
-}
-
-.Animaux:hover {
-  background-color: #0065fc;
-  text-align: center;
-  width: 247px;
-  transition: 1s ease-in-out;
-}
-
-.effect {
-  position: absolute;
-  z-index: 2;
+.economique {
+  width: 192px;
   height: 50px;
-  color: white;
-  font-size: small;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  border-radius: 25px;
+  position: relative;
 }
-
-.btn {
-  position: absolute;
-  z-index: -1;
-  background: none;
+.btneco {
+  background: transparent;
   height: 50px;
   border: 2px solid #cccccc;
   border-radius: 25px;
@@ -212,74 +169,153 @@ input[type="submit"] {
   font-size: 1.2em;
   font-weight: bold;
   letter-spacing: -0.6px;
+  width: 192px;
+  text-align: end;
 }
-
-/* Réglages block filtres */
-
-.sp_filtre {
-  position: relative;
-  padding: 17px;
-}
-
-.sp_filtre img {
+.se_filtre img {
   width: 16px;
   height: 16px;
-  padding-top: 16px;
+  padding: 16px 0 0 16px;
+}
+.se_filtre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #deebff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.se_filtre:hover {
+  width: 192px;
+  border-radius: 25px;
+  transition: 0.4s linear;
+  text-align: center;
 }
 
-.sp_filtre i {
+/* Filtre Familial */
+
+.famille {
+  width: 152px;
+  height: 50px;
+  position: relative;
+  margin-left: 24px;
+}
+.btnfam {
+  background: transparent;
+  height: 50px;
+  border: 2px solid #cccccc;
+  border-radius: 25px;
+  padding-right: 19px;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  width: 152px;
+  text-align: end;
+}
+.fa_filtre i {
   color: #0065fc;
-  margin-top: 17px;
+  padding: 16px 0 0 18px;
+}
+.fa_filtre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #deebff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.fa_filtre:hover {
+  width: 152px;
+  border-radius: 25px;
+  transition: 0.4s linear;
+  text-align: center;
 }
 
-.fa-child {
-  margin-left: 2px;
+/* Filtre Romantique */
+
+.Rommance {
+  width: 192px;
+  height: 50px;
+  position: relative;
+  margin-left: 24px;
+}
+.btnrom {
+  background: transparent;
+  height: 50px;
+  border: 2px solid #cccccc;
+  border-radius: 25px;
+  padding-right: 19px;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  width: 192px;
+  text-align: end;
+}
+.ro_filtre i {
+  color: #0065fc;
+  padding: 16px 0 0 16px;
+  font-size: 18px;
+}
+.ro_filtre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #deebff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.ro_filtre:hover {
+  width: 192px;
+  border-radius: 25px;
+  transition: 0.4s linear;
+  text-align: center;
 }
 
-.fa-dog {
-  margin-top: -2px;
-}
+/* Filtre Animaux domestique */
 
-.fa-heart {
-  margin-right: 1px;
+.Animal {
+  width: 248px;
+  height: 50px;
+  position: relative;
+  margin-left: 24px;
 }
-
-.E {
-  width: 193px;
-  text-align: right;
-  margin: 0 0 0 -33px;
+.btnani {
+  background: transparent;
+  height: 50px;
+  border: 2px solid #cccccc;
+  border-radius: 25px;
+  padding-right: 19px;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  width: 248px;
+  text-align: end;
 }
-
-#E {
-  margin: 0 143px 0 32px;
+.an_filtre i {
+  color: #0065fc;
+  padding: 16px 0 0 16px;
 }
-.F {
-  width: 148px;
-  text-align: right;
-  margin: 0 0 0 -28px;
+.an_filtre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #deebff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
 }
-
-#F {
-  margin: 0 101px 0 24px;
-}
-.R {
-  width: 191px;
-  text-align: right;
-  margin: -35px 0 0 0;
-}
-
-#R {
-  margin: 0 140px 0 24px;
-}
-
-.A {
-  width: 246px;
-  text-align: right;
-  margin: -35px 0 0 0;
-}
-
-#A {
-  margin: 0 197px 0 24px;
+.an_filtre:hover {
+  width: 248px;
+  border-radius: 25px;
+  transition: 0.4s linear;
+  text-align: center;
 }
 
 .i_filtre {
@@ -839,18 +875,6 @@ h4 {
   }
   .i_filtre {
     height: 51px;
-  }
-  #E {
-    margin: 0 133px 13px 23px;
-  }
-  #F {
-    margin: 0 91px 13px 21px;
-  }
-  #R {
-    margin: 0 130px 13px 21px;
-  }
-  #A {
-    margin: 0 197px 0px 21px;
   }
   #information {
     margin: 12px 0 35px 23px;
