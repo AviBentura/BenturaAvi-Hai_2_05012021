@@ -123,7 +123,7 @@ input[type="submit"] {
 }
 
 .bouton {
-  visibility: hidden;
+  display: none;
 }
 
 
@@ -847,7 +847,7 @@ h4 {
     height: 20px;
   }
   .bouton {
-    visibility: visible;
+    display: block;
     background: #0065fc;
     color: white;
     width: 51px;
@@ -855,29 +855,67 @@ h4 {
     border: none;
     border-radius: 17px 17px 17px 17px;
     font-size: 18px;
-    margin-left: -36px;
+    margin-left: -51px;
   }
   #search {
-    width: 83%;
+    width: 100%;
+    max-width: 333px;
+    border-radius: 25px;
     height: 52px;
-    margin-left: -37px;
+    margin-left: -51px;
     position: relative;
     z-index: -1;
-    padding-left: 52px;
+    padding-left: 66px;
   }
-  #filtre {
-    margin-top: 0;
+  .filtre {
+    margin-top: 20px;
+    margin-left: 23px;
     height: auto;
   }
-  h3 {
-    margin: 35px 100px 15px 23px;
+  .cache {
     width: 100%;
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .btneco {
+    font-size: 17px;
+    width: 179px;
+  }
+  .economique {
+    width: 179px;
+  }
+  .famille {
+    margin-left: 11px;
+  }
+  .btnfam {
+    font-size: 17px;
+    width: 141px;
+  }
+  .famille {
+    width: 141px;
+  }
+  .Rommance {
+    width: 175px;
+    margin: 13px 11px 0 0;
+  }
+  .btnrom {
+    font-size: 17px;
+    width: 175px;
+  }
+  .Animal {
+    width: 226px;
+    margin-top: 13px;
+    margin-left: 0;
+  }
+  .btnani {
+    font-size: 17px;
+    width: 226px;
   }
   .i_filtre {
     height: 51px;
   }
   #information {
-    margin: 12px 0 35px 23px;
+    margin: 30px 0 52px 23px;
   }
   #i {
     font-size: 12px;
@@ -950,7 +988,8 @@ h4 {
     padding: 46px 0 0 0;
   }
   .fa-chart-line {
-    padding: 40px 0 0 18px;
+    text-align: right;
+    padding: 40px 0 0 0;
   }
   h2 {
     font-size: 22px;
@@ -1169,8 +1208,9 @@ h4 {
   #search {
     width: 240px;
   }
-  #filtre {
-    margin-top: 0;
+  .filtre {
+    margin-top: 20px;
+    margin-left: 23px;
     height: auto;
   }
   h3 {
