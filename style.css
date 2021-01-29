@@ -1195,7 +1195,7 @@ h4 {
     display: none;
   }
   .bouton {
-    visibility: visible;
+    display: block;
     background: #0065fc;
     color: white;
     width: 51px;
@@ -1203,10 +1203,14 @@ h4 {
     border: none;
     border-radius: 17px 17px 17px 17px;
     font-size: 18px;
-    margin-left: -12px;
+    margin-left: -51px;
   }
   #search {
-    width: 240px;
+    width: 333px;
+    border-radius: 25px;
+    margin-left: -51px;
+    padding-left: 66px;
+    z-index: -1;
   }
   .filtre {
     margin-top: 20px;
@@ -1223,20 +1227,21 @@ h4 {
   .i_filtre {
     height: 51px;
   }
-  #E {
-    margin: 0 133px 13px 23px;
+  .famille {
+    width: 172px;
+    margin-left: 20px;
   }
-  #F {
-    margin: 0 91px 13px 21px;
+  .economique {
+    margin-bottom: 20px;
   }
-  #R {
-    margin: 0 130px 13px 21px;
+  .Rommance {
+    margin-left: 0;
   }
-  #A {
-    margin: 0 197px 0px 21px;
+  .Animal {
+    margin-left: 20px;
   }
   #information {
-    margin: 12px 0 35px 23px;
+    margin: 30px 0 35px 23px;
   }
 
   /* Media Queries article populaire */
@@ -1434,15 +1439,15 @@ h4 {
 
   /*Media Queries Premiere Div Main*/
 
-  #filtre {
+  .filtre {
     height: auto;
-    margin-left: 40px;
+    margin-left: 52px;
   }
-  #filtre h3 {
-    margin: 13px 0 0 16px;
+  .cache {
+    font-size: 20px;
   }
-  #A {
-    margin: 23px 197px 0 24px;
+  .Animal {
+    margin: 20px 0 0 0;
   }
   #information {
     margin: 34px 0 37px 52px;
@@ -1640,29 +1645,25 @@ h4 {
 
   /*Media Queries Première Div Main*/
 
-  #filtre {
-    display: grid;
-    grid-template-columns: 204px 172px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  .filtre {
     height: auto;
     margin-left: 40px;
   }
-  #filtre h3 {
-    margin: 13px 10px 0 16px;
+  .cache {
+    font-size: 20px;
   }
-  #E {
-    margin: 0 143px 0 13px;
-    grid-row: 2;
+  .economique {
+    margin-bottom: 20px;
   }
-  #F {
-    grid-row: 2;
+  .famille {
+    margin-left: 20px;
   }
-  #R {
-    grid-row: 2;
+  .Rommance {
+    width: 212px;
+    margin-left: 20px;
   }
-  #A {
-    margin: 5px 197px 0 13px;
-    grid-row: 3;
+  .Animal {
+    margin: 0;
   }
   #information {
     margin: 34px 0 37px 52px;
