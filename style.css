@@ -467,6 +467,10 @@ h3 {
   margin: 0;
   padding: 26px 0 46px 44px;
 }
+#haut a {
+  color: black;
+  text-decoration: none;
+}
 
 /* h2 article art_heberg taille et positionnement  police */
 
