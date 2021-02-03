@@ -236,7 +236,7 @@ input[type="submit"] {
 
 /* Filtre Romantique */
 
-.Rommance {
+.rommance {
   width: 192px;
   height: 50px;
   position: relative;
@@ -278,7 +278,7 @@ input[type="submit"] {
 
 /* Filtre Animaux domestique */
 
-.Animal {
+.animal {
   width: 248px;
   height: 50px;
   position: relative;
@@ -550,7 +550,7 @@ h2 {
   margin: 15px 50px 0 21px;
 }
 
-.Nuit {
+.nuit {
   grid-area: nuit;
   margin: 0%;
   padding-top: 7px;
@@ -897,7 +897,7 @@ h4 {
   .famille {
     width: 141px;
   }
-  .Rommance {
+  .rommance {
     width: 175px;
     margin: 13px 11px 0 0;
   }
@@ -905,7 +905,7 @@ h4 {
     font-size: 17px;
     width: 175px;
   }
-  .Animal {
+  .animal {
     width: 226px;
     margin-top: 13px;
     margin-left: 0;
@@ -970,7 +970,7 @@ h4 {
   .it1 {
     grid-area: descrip;
   }
-  .Nuit {
+  .nuit {
     font-size: 13px;
     letter-spacing: 0.1;
   }
@@ -1141,7 +1141,7 @@ h4 {
   h4 {
     margin: 47px 0 9px 0;
   }
-  #Assistance {
+  #assistance {
     margin: 58px 0 9px 0;
   }
   .pied_page li {
@@ -1242,10 +1242,10 @@ h4 {
   .economique {
     margin-bottom: 20px;
   }
-  .Rommance {
+  .rommance {
     margin-left: 0;
   }
-  .Animal {
+  .animal {
     margin-left: 20px;
   }
   #information {
@@ -1295,11 +1295,11 @@ h4 {
     font-size: 15px;
     margin-bottom: 15px;
   }
-  .Nuit {
+  .nuit {
     font-size: 17px;
     padding-bottom: 15px;
   }
-  .Nuit strong {
+  .nuit strong {
     font-size: 17px;
   }
 
@@ -1454,7 +1454,7 @@ h4 {
   .cache {
     font-size: 20px;
   }
-  .Animal {
+  .animal {
     margin: 20px 0 0 0;
   }
   #information {
@@ -1505,11 +1505,11 @@ h4 {
     margin: 25px 20px 0 20px;
   }
 
-  .Nuit {
+  .nuit {
     font-size: 17px;
     padding: 73px 50px 73px 0px;
   }
-  .Nuit strong {
+  .nuit strong {
     font-size: 17px;
   }
   .stars {
@@ -1666,11 +1666,11 @@ h4 {
   .famille {
     margin-left: 20px;
   }
-  .Rommance {
+  .rommance {
     width: 212px;
     margin-left: 20px;
   }
-  .Animal {
+  .animal {
     margin: 0;
   }
   #information {
@@ -1700,11 +1700,11 @@ h4 {
     font-size: 1.25em;
     margin: 12px 45px 0 26px;
   }
-  .Nuit {
+  .nuit {
     font-size: 18px;
     padding: 7px 50px 7px 0;
   }
-  .Nuit strong {
+  .nuit strong {
     font-size: 20px;
   }
   .stars {
