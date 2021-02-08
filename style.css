@@ -5,13 +5,9 @@ body {
   margin: 0;
 }
 
-
-
 /***********/
 /* header */
 /**********/
-
-
 
 .container_head {
   display: grid;
@@ -126,7 +122,6 @@ input[type="submit"] {
   display: none;
 }
 
-
 /*******************************/
 /* Partie filtres de recherche */
 /*******************************/
@@ -134,10 +129,7 @@ input[type="submit"] {
 /* Div Filtre */
 
 .filtre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 52px;
@@ -359,11 +351,9 @@ sub {
   font-size: 15px;
 }
 
-
 /**********************************************/
 /* Disposition Grid de la Section Hebergement */
 /**********************************************/
-
 
 #hebergement {
   display: grid;
@@ -387,7 +377,7 @@ sub {
 /* stylisation des cadres de presentations des hotels */
 
 .div_hebergement {
-  border: 5px solid #ffffff;
+  border: 5px solid transparent;
   border-radius: 21px 21px 21px 21px;
   width: 236px;
   height: 200px;
@@ -455,7 +445,6 @@ figure p sub {
   color: #f2f2f2;
 }
 
-
 /* h3 article art_heberg taille et positionnement de police */
 
 h3 {
@@ -509,20 +498,17 @@ h2 {
   padding-bottom: 18px;
 }
 
-
-
 /************************************************/
 /* stylisation des cadres de presentations hotels populaires */
 /************************************************/
 
-
-
 .div_populaire {
   display: grid;
-  grid-template-areas: 'photo desc'
-                       'photo nuit'
-                       'photo star';
-  border: 5px solid #ffffff;
+  grid-template-areas:
+    "photo desc"
+    "photo nuit"
+    "photo star";
+  border: 5px solid transparent;
   grid-template-columns: 127px;
   grid-template-rows: 50px 25px;
   border-radius: 21px 21px 21px 21px;
@@ -530,7 +516,7 @@ h2 {
   height: 134px;
   background-color: #ffffff;
   margin: 17px 39px 16px 37px;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);*/
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .div_populaire img {
   width: 127px;
@@ -578,14 +564,10 @@ h2 {
   padding: 46px 40px 0 108px;
 }
 
-
-
 /************************************/
 /* stylisation des cadres activités */
-      /* Display Grid Activités */
+/* Display Grid Activités */
 /************************************/
-
-
 
 #activite {
   margin: 0 50px 60px 50px;
@@ -717,20 +699,16 @@ h2 {
   margin-top: -43px;
 }
 
-
-
 /**********/
 /* footer */
 /**********/
-
-
 
 footer {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0 55px 50px;
   justify-content: space-between;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pied_page {
@@ -762,24 +740,18 @@ h4 {
 /********************************************/
 /********************************************/
 /********************************************/
-/*******/                            /*******/
+/*******/ /*******/
 /*******       MEDIA QUERIES         /*******/
-/*******/                            /*******/
+/*******/ /*******/
 /********************************************/
 /********************************************/
 /********************************************/
-
 
 /*****************************/
 /* Pour mobile jusqu'a 480px */
 /*****************************/
 
-
-
-
-
-@media screen and (max-device-width: 480px) {
-
+@media screen and (max-width: 480px) {
   body {
     width: 100%;
     margin: 0;
@@ -832,7 +804,7 @@ h4 {
     padding: 40px 20px 15px 0;
   }
 
- /* Media Queries Première Div main */
+  /* Media Queries Première Div main */
 
   h1 {
     padding: 32px 0 0 20px;
@@ -935,13 +907,8 @@ h4 {
   /* Media Queries Section hebergements */
 
   #hebergement {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0;
   }
   .euro {
@@ -961,9 +928,10 @@ h4 {
   }
   .desc {
     display: grid;
-    grid-template-areas: 'descrip'
-                         'nuit'
-                         'star';
+    grid-template-areas:
+      "descrip"
+      "nuit"
+      "star";
     grid-template-rows: 34px auto auto;
     margin: 15px 41px 0 20px;
   }
@@ -972,7 +940,7 @@ h4 {
   }
   .nuit {
     font-size: 13px;
-    letter-spacing: 0.1;
+    letter-spacing: 0.1px;
   }
   figcaption {
     font-size: 15px;
@@ -984,7 +952,7 @@ h4 {
     margin-top: -6px;
     margin-bottom: 18px;
   }
-  article { 
+  article {
     width: 100%;
   }
   .align {
@@ -1147,21 +1115,17 @@ h4 {
   .pied_page li {
     padding-top: 18px;
   }
-
 }
 
 /************************************/
-
 
 /************************************/
 /* Pour screen entre 480px et 768px */
 /************************************/
 
-
 /*************************************/
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-
   /* Media Queries Header */
 
   #logo {
@@ -1188,7 +1152,7 @@ h4 {
   }
 
   /* Media Queries Première Div main */
-  
+
   h1 {
     padding: 32px 0 0 20px;
   }
@@ -1270,10 +1234,10 @@ h4 {
   }
   .div_populaire {
     grid-template-areas:
-        'photo'
-        'desc'
-        'nuit'
-        'star';
+      "photo"
+      "desc"
+      "nuit"
+      "star";
     grid-template-columns: 100%;
     grid-template-rows: 223px;
     display: flex;
@@ -1327,7 +1291,7 @@ h4 {
     width: auto;
     height: auto;
     padding-bottom: 10px;
-    margin: 20px 5px 10px 5px
+    margin: 20px 5px 10px 5px;
   }
   .div_hebergement img {
     height: 115px;
@@ -1343,11 +1307,11 @@ h4 {
     font-size: 14px;
   }
   .icone {
-    margin: 0; 
+    margin: 0;
   }
 
   /* Media Queries Section Activités */
-  
+
   .ban_image {
     height: auto;
     min-height: 315px;
@@ -1421,21 +1385,17 @@ h4 {
   footer {
     padding: 0 0 55px 40px;
   }
-
 }
 
 /************************************/
-
 
 /************************************/
 /* Pour screen entre 768px et 900px */
 /************************************/
 
-
 /*************************************/
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
-
   /*HEADER*/
 
   nav ul {
@@ -1469,7 +1429,7 @@ h4 {
   }
 
   /* Media Queries article populaire */
-  
+
   #populaire {
     margin: 0 52px 0 52px;
   }
@@ -1515,7 +1475,7 @@ h4 {
   .stars {
     font-size: 15px;
   }
-  
+
   /* Media Queries Article hebergement */
 
   .art_heberg {
@@ -1556,7 +1516,7 @@ h4 {
   }
 
   /* Media Queries Section Activités */
-  
+
   #activite {
     margin: 0 52px 60px 52px;
   }
@@ -1627,21 +1587,17 @@ h4 {
   #longchamp figure {
     height: 201px;
   }
-
 }
 
 /*************************************/
-
 
 /*************************************/
 /* Pour screen entre 900px et 1024px */
 /*************************************/
 
-
 /*************************************/
 
 @media screen and (min-width: 900px) and (max-width: 1024px) {
-
   /*HEADER*/
 
   nav ul {
@@ -1685,7 +1641,7 @@ h4 {
   }
 
   /* Media Queries article populaire */
-  
+
   .align {
     display: grid;
     grid-template-columns: 85% 15%;
@@ -1712,10 +1668,10 @@ h4 {
   }
   .div_populaire {
     grid-template-areas:
-        'photo'
-        'desc'
-        'nuit'
-        'star';
+      "photo"
+      "desc"
+      "nuit"
+      "star";
     grid-template-columns: 100%;
     grid-template-rows: 250px;
     height: 350px;
@@ -1771,7 +1727,7 @@ h4 {
   }
 
   /* Media Queries Section Activités */
-  
+
   #activite {
     margin: 0 52px 60px 52px;
   }
@@ -1842,21 +1798,17 @@ h4 {
   .ban_image {
     width: auto;
   }
-
 }
 
 /**************************************/
-
 
 /**************************************/
 /* Pour laptop entre 1024px et 1200px */
 /**************************************/
 
-
 /**************************************/
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-
   /*HEADER*/
 
   nav ul {
@@ -1907,8 +1859,8 @@ h4 {
     padding: 26px 0 46px 20px;
   }
   #haut a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
   }
 
   /* Media Queries Article Populaire */
@@ -1918,7 +1870,7 @@ h4 {
   }
 
   /* Media Queries Section Activités */
-  
+
   #activite h2 {
     grid-column: 1 / span 2;
   }
@@ -1975,21 +1927,17 @@ h4 {
   #longchamp figure {
     height: 251px;
   }
-
 }
 
 /**************************************/
-
 
 /**************************************/
 /* Pour laptop entre 1200px et 1438px */
 /**************************************/
 
-
 /**************************************/
 
 @media screen and (min-width: 1200px) and (max-width: 1438px) {
-
   /*HEADER*/
 
   nav ul {
@@ -2012,7 +1960,7 @@ h4 {
   }
 
   /* Media Queries Section Activités */
-  
+
   #activite h2 {
     grid-column: 1 / span 2;
   }
@@ -2044,5 +1992,4 @@ h4 {
   #longchamp img {
     height: 194px;
   }
-
 }
